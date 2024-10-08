@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <i class='bx bx-filter-alt'></i>
+    <i class='bx bx-sort-up'></i>
+    <i class='bx bx-sort-down'></i>
+
+    <div class="filter">
+        <form action="" id="filter-form">
+            <input type="text" id="input-color" placeholder="Колір">
+            <input type="text" id="input-category" placeholder="Категорія">
+
+            <div id="availability-option">
+                <div class="availability">
+                    <input type="radio" id="check-available" name="availability" checked>
+                    <label for="check-available">У наявності</label>
+                </div>
+
+                <div class="availability">
+                    <input type="radio" id="check-unavailable" name="availability">
+                    <label for="check-unavailable">Немає в наявності</label>
+                </div>
+            </div>
+            
+            <button type="submit">Показати товари</button>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Назва</th>
+                <th>Колір</th>
+                <th>Вартість</th>
+                <th>Категорія</th>
+                <th>Наявність</th>
+            </tr>
+        </thead>
+        <tbody class="row">
+           
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
